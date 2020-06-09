@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*{padding:0;}
+html, body {
+  height:100%;
+}
+.info-panel {
+  position:fixed;
+  height:100%;
+  width:25%;
+}
+.info-content{  /* added in order to add paddings */
+  padding:150px 15px 15px 20px;
+  text-align: center;
+  font-family: "Playfair Display";
+}
+.profile-img {
+  width: 30%;
+  border-radius: 50%;
+}
+.wrapper {
+  margin-left:25%; /* admin width + inner paddings*/
+ }
+.content {
+  padding-top: 0;
+  font-family: "Playfair Display";
+}
+.content h2 {
+  padding-left: 10px;
+}
+section {
+   padding-top: 5px;
+   padding-bottom: 5px;
+ }
+h1 {
+   font-weight: 100;
+   font-size: 50px;
+   margin-bottom: 5px;
+   margin-top: 5px;
+ }
+h2 {
+   font-weight: 100;
+   font-size: 50px;
+   font-family: "Open Sans Condensed";
+   margin-bottom: 0;
+ }
+.col-narrow {
+  width: 20%;
+  padding-left: 30px;
+}
+.col-narrow h3 {
+  margin-bottom: 4px;
+}
+.col-narrow p {
+  margin-top: 0px;
+}
+.col-wide {
+  width: 70%;
+}
+.col-wide p {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.columns {
+  height: 100%;
+  display: flex;
+}
+#footer {
+  position: relative;
+  top: 25%;
+  bottom: 0;
+  width: 100%;
+}
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#contact {
+  font-family: "Playfair Display";
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.contact-info a {
+  padding: 20px;
+  color: black;
+  font-size: 20px;
+}
+.contact-info a i:hover {
+  filter: opacity(30%);
+}
+
+@media only screen and (max-width: 950px) {
+  .info-panel {
+    position: static;
+    width: 100%;
+  }
+  .info-content {
+    padding-top: 10px;
+  }
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .columns {
+    display: block;
+  }
+  .wrapper {
+    text-align: center;
+  }
+  .col-narrow {
+    width: auto;
+    padding: 0px;
+  }
+  .col-wide {
+    width: auto;
+  }
+  .col-wide p {
+    margin-left: auto;
+  }
+}
